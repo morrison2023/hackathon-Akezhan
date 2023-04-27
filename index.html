@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="narration">
+        <div class="narration_title">
+          <h1>
+            Сейчас вас ждет увлекательное путешествие по космосу<br />
+            «Поехали!»
+          </h1>
+        </div>
+      </section>
+      <section class="all_planets">
+        <div class="all_planets_title">
+          <h1>
+            Здесь вы можете выбрать любую планету солнечной системы и подробно
+            изучить ее. Что бы выбрать планету просто нажмите на нее
+          </h1>
+        </div>
+        <div class="planets">
+          <a href="" class="button_sun">
+            <img src="./img/sun1.png" alt="" class="planet sun" />
+          </a>
+
+          <a href="" class="button_mercury">
+            <img src="./img/mercury2.jpg" alt="" class="planet mercury" />
+          </a>
+
+          <a href="" class="button_venus">
+            <img src="./img/venus5.png" alt="" class="planet venus" />
+          </a>
+
+          <a href="" class="button_earth">
+            <img src="./img/eart.png" alt="" class="planet earth" />
+          </a>
+
+          <a href="" class="button_mars">
+            <img src="./img/mars2.png" alt="" class="planet mars" />
+          </a>
+
+          <a href="" class="button_jupiter">
+            <img src="./img/jupiter1.png" alt="" class="planet jupiter" />
+          </a>
+
+          <a href="" class="button_saturn">
+            <img src="./img/saturn2.png" alt="" class="planet saturn" />
+          </a>
+
+          <a href="" class="button_uranus">
+            <img src="./img/uranus3.png" alt="" class="planet uranus" />
+          </a>
+
+          <a href="" class="button_neptune">
+            <img src="./img/neptune1.png" alt="" class="planet neptune" />
+          </a>
+        </div>
+
+        <div class="buttons">
+          <button class="btn btn1">Солнце</button>
+          <button class="btn btn2">Меркурий</button>
+          <button class="btn btn3">Венера</button>
+          <button class="btn btn4">Земля</button>
+          <button class="btn btn5">Марс</button>
+          <button class="btn btn6">Юпитер</button>
+          <button class="btn btn7">Сатурн</button>
+          <button class="btn btn8">Уран</button>
+          <button class="btn btn9">Нептун</button>
+        </div>
+      </section>
+      <section class="question">
+        <div class="question_text">
+          <h1 class="question_title">
+            Все посмотрели?<br />
+            Узнали много нового?
+          </h1>
+        </div>
+      </section>
+
+      <section class="answer">
+        <div class="answer_title">
+          <h1>Надеюсь что да.</h1>
+        </div>
+        <div class="answer_feedback_text">
+          <p>
+            Вы можете оставить комментарии по поводу моей работы заполнив форму
+          </p>
+        </div>
+        <div class="answer_feedback">
+          <form class="contact_form" action="">
+            <div class="input_group">
+              <label for="person_name">Name</label>
+              <input
+                type="text"
+                name="person_name"
+                id="person_name"
+                placeholder="Напишите ваше имя"
+              />
+            </div>
+            <div class="input_group">
+              <label for="person_email">Email</label>
+              <input
+                type="email"
+                name="person_email"
+                placeholder="Напишите ваш Email"
+                id="person_email"
+              />
+            </div>
+            <div class="input_group">
+              <label for="person_text">Text</label>
+              <input
+                type="text"
+                name="person_comment"
+                placeholder="Напишите комментарий"
+                id="person_comment"
+              />
+            </div>
+            <div class="input_group">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div class="sun_info hidden">
+      <div class="info1">
+        <div class="close1">
+          <span>Close</span>
+        </div>
+        <div class="sun_vid">
+          <video
+            autoplay
+            disableremoteplayback
+            loop
+            muted
+            playsinline
+            preload="auto"
+            width="336"
+            height="188"
+            src="https://www.gstatic.com/culturalinstitute/searchar/assets/sun/desktop_light.mp4"
+          ></video>
+        </div>
+        <div class="info_text">
+          Солнце - единственная звезда солнечной системы, вокруг которой
+          вращаются все другие объекты системы, в том числе и мы с вами. Без
+          существования этой звезды, не было бы жизни и на нашей планете. Ее
+          масса составляет 99,866% от всей массы солнечной системы. Температура
+          солнца может достигать невероятных
+          <span style="color: #df533a">15 млн°C</span>
+        </div>
+        <div class="info_progressbar">
+          Состав солнца:
+          <div class="cards">
+            <div class="card">
+              <div class="box" style="--color: #e8610c; --num: 73">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Водород</h2>
+                  <p>73%</p>
+                </div>
+              </div>
+
+              <div class="box" style="--color: #f2870c; --num: 25">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Гелий</h2>
+                  <p>25%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mercury_info hidden">
+      <div class="info2">
+        <div class="close2">
+          <span>close</span>
+        </div>
+        <div class="mercury_vid">
+          <video
+            autoplay
+            disableremoteplayback
+            loop
+            muted
+            playsinline
+            preload="auto"
+            width="336"
+            height="188"
+            src="https://www.gstatic.com/culturalinstitute/searchar/assets/mercury/desktop_light.mp4"
+          ></video>
+        </div>
+        <div class="info_text">
+          Меркурий - это самая маленькая планета солнечной системы(около 5тысяч
+          километров, что примерно в 10 раз меньше земли), и по совместительству
+          является самой близкой к солнцу, она настолько близко, что на
+          поверхности повернутой к солнцу температура составляет
+          <span style="color: #e00201">+430°C</span> . Однако на стороне
+          повернутой от солнца температура максимально низкая и составляет
+          <span style="color: #5195f5">-190°C</span> что на самом деле
+          удивительно. Один год на меркурии равен 88 дням на Земле
+        </div>
+        <div class="info_progressbar1">
+          Состав Меркурия:
+          <div class="cards">
+            <div class="card">
+              <div class="box" style="--color: #2f3236; --num: 42">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Кислород</h2>
+                  <p>42%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #383e40; --num: 29">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Натрий</h2>
+                  <p>29%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #252828; --num: 22">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Водород</h2>
+                  <p>22%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #252828; --num: 6">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Гелий</h2>
+                  <p>6%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #2f3632; --num: 1">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Все остальное</h2>
+                  <p>1%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="venus_info hidden">
+      <div class="info3">
+        <div class="close3">
+          <span>Close</span>
+        </div>
+        <div class="venus_vid">
+          <video
+            autoplay
+            disableremoteplayback
+            loop
+            muted
+            playsinline
+            preload="auto"
+            width="336"
+            height="188"
+            src="https://www.gstatic.com/culturalinstitute/searchar/assets/venus_surface/desktop_light.mp4"
+          ></video>
+        </div>
+        <div class="info_text">
+          Венера - вторая планета по отдаленности от солнца, венеру на
+          протяжении долгого времени считали близнецом Земли(из за ее схожих
+          размеров). Венера не имеет смены времен года и не имеет спутников. Эта
+          планета вращается в обратном направлении вокруг своей оси. Один год на
+          Венере равен 224 дням на Земле. Венера считается самой горячей
+          планетой солнечной системы(температура свыше 450°C).
+        </div>
+        <div class="info_progressbar1">
+          Состав Венеры:
+          <div class="cards">
+            <div class="card">
+              <div class="box" style="--color: #000000; --num: 96.5">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Углекислый газ</h2>
+                  <p>96.5%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #000000; --num: 3.5">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Азот</h2>
+                  <p>3,5%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="earth_info hidden">
+      <div class="info4">
+        <div class="close4 earth_close">
+          <span>Close</span>
+        </div>
+        <div class="earth_vid">
+          <video
+            autoplay
+            disableremoteplayback
+            loop
+            muted
+            playsinline
+            preload="auto"
+            width="336"
+            height="188"
+            src="https://www.gstatic.com/culturalinstitute/searchar/assets/earth/desktop_light.mp4"
+          ></video>
+        </div>
+        <div class="info_text_earth">
+          Земля - является третьей планетой по удаленности от
+          <span style="color: #e00201">солнца</span>/, она находится в обитаемой
+          зоне Солнечной системы, поэтому здесь и зародилась жизнь около 3,5
+          миллиардов лет назад. А вобщем нашей планете порядка 4,5 млрд лет.
+          Хоть наша планета и названа землей, однако 70% всей поверхности
+          занимает вода(моря, океаны, реки, озера и тд). Земля имеет атмосферу
+          которая простирается на 10тыс километров, она защищает планету от
+          радиомагнитных излучений Солнца
+        </div>
+        <div class="info_progressbar1">
+          Состав Земли:
+          <div class="cards">
+            <div class="card">
+              <div class="box" style="--color: #8df52f; --num: 32.1">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Железо</h2>
+                  <p>32,1%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #71ff38; --num: 30.1">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Кислород</h2>
+                  <p>30,1%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #3ee62a; --num: 15.1">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Кремний</h2>
+                  <p>15,1%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #21ff31; --num: 13.9">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Магний</h2>
+                  <p>13,9%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #21ff31; --num: 2.9">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Сера</h2>
+                  <p>2,9%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #1df54e; --num: 1.8">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Никеля</h2>
+                  <p>1,8%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #91e629; --num: 1.5">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Кальция</h2>
+                  <p>1,5%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mars_info hidden">
+      <div class="info5">
+        <div class="close5">
+          <span>Close</span>
+        </div>
+        <div class="mars_vid">
+          <video
+            autoplay
+            disableremoteplayback
+            loop
+            muted
+            playsinline
+            preload="auto"
+            width="336"
+            height="188"
+            src="https://www.gstatic.com/culturalinstitute/searchar/assets/mars/desktop_light.mp4"
+          ></video>
+        </div>
+        <div class="info_text">
+          Марс - Четвертая по отдаленности от солнца планета, и это та самая
+          планета, которую хочет колонизировать Илон Маск. Красная планета
+          (второе название марса) - самая изученная (после земли) планета. она
+          также покрыта множеством кратеров. Марс в шесть раз меньше земли,
+          вдвое меньше по диаметру и в десять раз меньше по массе. Ее красный
+          цвет обусловлен большим кол-вом железа в почве. Также эта планета
+          имеет 2 спутника Фобос и Деймос(в переводе "Страх и ужас") Через 20-40
+          млн лет вокруг марса появится кольцо, состоящее из спутника "Фобос",
+          т.к гравитация марса разорвет его
+        </div>
+        <div class="info_progressbar1">
+          Состав Марса:
+          <div class="cards">
+            <div class="card">
+              <div class="box" style="--color: #e00201; --num: 96.32">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Углекислый газ</h2>
+                  <p>96.32%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #f72f0c; --num: 2.7">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Азот</h2>
+                  <p>2,7%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #ed4e0c; --num: 1.6">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Аргон</h2>
+                  <p>1,6%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jupiter_info hidden">
+      <div class="info6">
+        <div class="close6">
+          <span>Close</span>
+        </div>
+        <div class="jupiter_vid">
+          <video
+            autoplay
+            disableremoteplayback
+            loop
+            muted
+            playsinline
+            preload="auto"
+            width="336"
+            height="188"
+            src="https://www.gstatic.com/culturalinstitute/searchar/assets/jupiter/desktop_light.mp4"
+          ></video>
+        </div>
+        <div class="info_text">
+          Юпитер - пятая планета по отдаленности от солнца. Она является самой
+          большой планетой солнечной системы, также она - Газовый гигант
+          (Сгусток сильно сжатого газа)она даже не имеет грунта, Однако если бы
+          вы оказались на Юпитере вы смогли бы там встать, ведь газ настолько
+          сильно сжат. Юпитер имеет 79 спутников состоящих из льда и каменистой
+          породы. На данной планете имеется Большое красное пятно - это
+          гигантский шторм, он известен людям еще с 17 века.
+        </div>
+        <div class="info_progressbar1">
+          Состав Юпитера:
+          <div class="cards">
+            <div class="card">
+              <div class="box" style="--color: #f7a472; --num: 89.8">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Водород</h2>
+                  <p>89.8%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #edb06d; --num: 10.2">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Гелий</h2>
+                  <p>10,2%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #f7a18f; --num: 0.6">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Метан и другие газы</h2>
+                  <p>0,6%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="saturn_info hidden">
+      <div class="info7">
+        <div class="close7">
+          <span>Close</span>
+        </div>
+        <div class="saturn_vid">
+          <video
+            autoplay
+            disableremoteplayback
+            loop
+            muted
+            playsinline
+            preload="auto"
+            width="336"
+            height="188"
+            src="https://www.gstatic.com/culturalinstitute/searchar/assets/saturn/desktop_light.mp4"
+          ></video>
+        </div>
+        <div class="info_text">
+          Сатурн - шестая планета по удаленности от солнца и по совместительству
+          вторая по размерам планета (после Юпитера). Полосы которые вы можете
+          наблюдать на юпитере - это длинные слои облаков. Его кольца состоят из
+          маленьких частиц льда и камня. Она имеет
+          <span style="color: #e00201">62 спутника</span> . Скорость ветра на
+          сатурне достигает
+          <span style="color: #e00201">1800км/ч</span>
+        </div>
+        <div class="info_progressbar1">
+          Состав Сатурна:
+          <div class="cards">
+            <div class="card">
+              <div class="box" style="--color: #9b7ef9; --num: 75">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Водород</h2>
+                  <p>75%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #5951e6; --num: 25">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Гелий</h2>
+                  <p>25%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="uranus_info hidden">
+      <div class="info8">
+        <div class="close8">
+          <span>Close</span>
+        </div>
+        <div class="uranus_vid">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Uranus_as_seen_by_NASA%27s_Voyager_2_%28remastered%29_-_JPEG_converted.jpg/274px-Uranus_as_seen_by_NASA%27s_Voyager_2_%28remastered%29_-_JPEG_converted.jpg"
+            alt="uranus"
+          />
+        </div>
+        <div class="info_text">
+          Уран - седьмая по отдаленности. Как и юпитер имеет кольца состоящие из
+          тех же льда и камней. Уран имеет самую наклоненную ось вращения, уран
+          как бы "Лежит на боку". Имеет
+          <span style="color: #e00201">26 спутников</span>. Скорость ветров на
+          уране составляет около <span style="color: #e00201">900км/ч</span>
+        </div>
+        <div class="info_progressbar1">
+          Состав Урана:
+          <div class="cards">
+            <div class="card">
+              <div class="box" style="--color: #68c6f2; --num: 83">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Водород</h2>
+                  <p>83%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #8ac8ff; --num: 15">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Гелий</h2>
+                  <p>15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #73a0e6; --num: 2.3">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Метан</h2>
+                  <p>2,3%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="neptune_info hidden">
+      <div class="info9">
+        <div class="close9">
+          <span>Close</span>
+        </div>
+        <div class="neptune_vid">
+          <video
+            autoplay
+            disableremoteplayback
+            loop
+            muted
+            playsinline
+            preload="auto"
+            width="336"
+            height="188"
+            src="https://www.gstatic.com/culturalinstitute/searchar/assets/neptune/desktop_light.mp4"
+          ></video>
+        </div>
+        <div class="info_text">
+          Нептун - это восьмая и последняя планета в солнечной системе. Она
+          находится дальше всего от солнца, поэтому его температура варьируется
+          от <span style="color: #37c4ed">-218°C</span> до
+          <span style="color: #37c4ed">-200°C</span> . Нептун является самой
+          маленькой из планет-гигантов ее радиус составляет всего 24 622 км , но
+          его масса превышает массу земли в 17,2 раза. У нее имеется 14
+          спутников, самый известный из них - Тритон. На нептуне имеется
+          <span style="color: rgb(161, 153, 153)">Большое темное пятно </span>
+        </div>
+        <div class="info_progressbar1">
+          Состав Нептуна:
+          <div class="cards">
+            <div class="card">
+              <div class="box" style="--color: #5195f5; --num: 80">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Водород</h2>
+                  <p>80%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #5c89ff; --num: 19">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Гелий</h2>
+                  <p>19%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="box" style="--color: #4a60e6; --num: 1">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>Метан</h2>
+                  <p>1%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script/jquery-3.6.4.js"></script>
+  <script src="./script/script.js"></script>
+</html>

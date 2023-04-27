@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&family=PT+Serif&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&family=PT+Serif&family=Ubuntu:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #fff;
+}
+.narration {
+  background: url(https://gamerwall.pro/uploads/posts/2022-02/1645779891_3-gamerwall-pro-p-bezgranichnii-kosmos-krasivie-oboi-3.jpg);
+
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.narration_img {
+  width: 100%;
+}
+.narration_title h1 {
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 350px 0 0 390px;
+  font-size: 28px;
+  font-family: "Ubuntu", sans-serif;
+}
+section {
+  background-color: #fff;
+}
+.all_planets {
+  background: url(https://pibig.info/uploads/posts/2022-12/1670019113_pibig-info-p-zvezdnoe-nebo-kosmos-vkontakte-2.jpg);
+  height: 800px;
+}
+.all_planets_title {
+  font-size: 34px;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+.planets {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 300px;
+}
+.planet {
+  width: 9%;
+  justify-content: space-around;
+}
+
+.button_sun {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.sun {
+  width: 100%;
+}
+
+.button_mercury {
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+}
+.mercury {
+  width: 25%;
+  justify-content: center;
+}
+.button_venus {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.venus {
+  width: 40%;
+
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 35px;
+}
+.button_earth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 5px;
+}
+.earth {
+  width: 50%;
+  margin: 0 50px 0 0;
+}
+.button_mars {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 5px 0 0;
+}
+.mars {
+  width: 100%;
+  margin: 0 100px 0 0;
+}
+
+.button_jupiter {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.jupiter {
+  width: 100%;
+}
+
+.button_saturn {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.saturn {
+  width: 100%;
+}
+
+.button_uranus {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.uranus {
+  width: 50%;
+}
+
+.button_neptune {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.neptune {
+  width: 50%;
+}
+
+.info_progressbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.box svg {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transform: rotate(270deg);
+}
+
+.box svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 2;
+  stroke: rgb(255, 255, 255);
+  transform: translate(5px, 5px);
+}
+
+.box svg circle:nth-child(2) {
+  opacity: 0;
+  stroke: var(--color);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+  animation: circleAnimation 1s linear forwards;
+  animation-delay: 2s;
+}
+
+.dot {
+  position: absolute;
+  inset: 5px;
+  z-index: 10;
+  animation: dotAnimation 1.5s linear forwards;
+}
+
+.dot::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--color), 0 0 30px var(--color);
+  background-color: var(--color);
+}
+
+.number {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.number h2 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.number p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 2px;
+  text-transform: uppercase;
+}
+
+.card {
+  width: 150px;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+}
+@keyframes dotAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(calc(3.6deg * var(--num)));
+  }
+}
+
+@keyframes circleAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.info_text {
+  font-family: "Ubuntu", sans-serif;
+}
+.info_text_earth {
+  font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
+}
+.sun_info {
+  /* display: none; */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.info1 {
+  background-color: #302d2d;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #464545;
+  width: 80%;
+  color: #fff;
+  font-size: 25px;
+  background: url(https://images.hindustantimes.com/tech/img/2022/05/05/original/sun-4444454_1920_1651753999330.jpg);
+}
+.close1,
+.close2,
+.close3,
+.close4,
+.close5,
+.close6,
+.close7,
+.close8,
+.close9 {
+  color: #9d9c9c;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  border: 2px dashed rgb(195, 189, 189);
+  margin: 0 0 20px 20px;
+}
+.close1:hover,
+.close2:hover,
+.close3:hover,
+.close4:hover,
+.close5:hover,
+.close6:hover,
+.close7:hover,
+.close8:hover,
+.close9 :hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+.info_progressbar1 {
+  justify-content: center;
+}
+
+.box {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+.earth_vid {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.earth_close {
+  margin: 0 0 20px 5px;
+}
+
+.info2 {
+  background-color: #302d2d;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #464545;
+  width: 80%;
+  color: #fff;
+  font-size: 25px;
+  background: url(https://cdn.britannica.com/05/110305-050-42CA686B/Mercury-Wide-Angle-Messenger-probe-hemisphere-image-Jan-14-2008.jpg);
+}
+.info3 {
+  background-color: #302d2d;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #464545;
+  width: 80%;
+  color: #fff;
+  font-size: 25px;
+  background: url(https://naked-science.ru/wp-content/uploads/2016/04/article_pia00271.jpg)
+    200px;
+}
+
+.info4 {
+  background-color: #302d2d;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #464545;
+  width: 80%;
+  color: #fff;
+  font-size: 25px;
+  background: url(https://icdn.lenta.ru/images/2020/12/15/17/20201215171604143/square_1280_25af7eed5875fdd0b2e3b12b4cc319d7.jpg)
+    no-repeat 90%;
+}
+.info5 {
+  background-color: #302d2d;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #464545;
+  width: 80%;
+  color: #fff;
+  font-size: 25px;
+  background: url(https://images.techinsider.ru/upload/img_cache/982/982fe0d83f1e1f1884869767148de802_ce_1874x1000x62x0.jpg);
+}
+
+.info6 {
+  background-color: #302d2d;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #464545;
+  width: 80%;
+  color: #fff;
+  font-size: 25px;
+  background: url(https://fantlab.ru/images/terms/97_1) 15%;
+}
+.info7 {
+  background-color: #302d2d;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #464545;
+  width: 80%;
+  color: #fff;
+  font-size: 25px;
+  background: url(https://starwalk.space/gallery/images/saturn-planet-guide/1140x641.jpg);
+}
+.info8 {
+  background-color: #302d2d;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #464545;
+  width: 80%;
+  color: #fff;
+  font-size: 25px;
+  background: url(https://starwalk.space/gallery/images/uranus-facts/1920x1080.jpg);
+}
+.info9 {
+  background-color: #302d2d;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #464545;
+  width: 80%;
+  color: #fff;
+  font-size: 25px;
+  background: url(https://hi-news.ru/wp-content/uploads/2015/12/konjunkcija-neptuna-s-saturnom_1.jpg);
+}
+.question {
+  background: url(https://abrakadabra.fun/uploads/posts/2022-03/1647950003_1-abrakadabra-fun-p-zvezdnoe-nebo-planeti-oboi-na-telefon-1.jpg);
+  height: 1000px;
+
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+.question_text {
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 0 0;
+  display: flex;
+}
+.question_title {
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+}
+.answer {
+  background: url(https://wp-s.ru/wallpapers/2/15/453668027421497/zv-zdnoe-nebo-kosmosa.jpg);
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.answer_title {
+  font-size: 34px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+.answer_feedback_text {
+  font-size: 34px;
+  color: #fff;
+  margin: 50px 0 0 0;
+}
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 100px;
+  border-radius: 10px;
+
+  margin-top: 50px;
+}
+.input_group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.input_group label {
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 0px;
+  padding-top: 30px;
+}
+
+.input_group input {
+  padding: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 1px solid #5a2f2f;
+}
+
+.input_group input::placeholder {
+  color: #999;
+}
+.input_group button[type="submit"] {
+  margin: 30px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(174, 145, 145);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: 300ms;
+  display: flex;
+  align-items: center;
+}
+.input_group button[type="submit"]:hover {
+  margin: 30px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(212, 197, 197);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: 300ms;
+  display: flex;
+  align-items: center;
+}
+.btn {
+  padding: 20px 30px 20px 30px;
+  margin: 0 0 0 50px;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 40px;
+  background-color: #302d2d;
+  color: #fff;
+}
+.btn1 {
+  margin: 0 0px 0 25px;
+}
+.btn7 {
+  margin: 0 0 0 75px;
+}
+.btn8 {
+  margin: 0 0 0 100px;
+}
+.mercury_info {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.venus_info {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.earth_info {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.mars_info {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.jupiter_info {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.saturn_info {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.uranus_info {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.neptune_info {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
